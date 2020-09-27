@@ -1,0 +1,16 @@
+<table>
+    <tr>
+        <td>
+            <span *ngIf="ultimoTicket" id="lblNuevoTicket">
+                Ultimo ticket generado {{ultimoTicket}}
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="btn btn-secondary btn-lg" (click)="generarTicket()">
+                Generar nuevo ticket
+            </button>
+        </td>
+    </tr>
+</table>

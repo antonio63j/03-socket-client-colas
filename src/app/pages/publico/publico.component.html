@@ -1,0 +1,94 @@
+
+
+<table>
+    <tr>
+        <td *ngIf="listAtendidos.length>0" valign="middle" class="ticket-actual">
+            <span id="lblTicket1" class="ticket-actual-numero">Ticket {{listAtendidos[0].id}}</span>
+            <br>
+            <span id="lblEscritorio1" class="ticket-actual-escritorio">Escritorio {{listAtendidos[0].escritorio}}</span>
+        </td>
+        <td>
+            <table>
+                <tr *ngFor="let att of listAtendidos3">
+                    <td>
+                        <span id="lblTicket2" class="ticket-secundario">Ticket {{att.id}}</span>
+                        <br>
+                        <span id="lblEscritorio2">Escritorio {{att.escritorio}}</span>
+                    </td>            
+                </tr>
+                
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- 
+<table>
+    <tr>
+        <td *ngIf="listAtendidos.length>0" valign="middle" class="ticket-actual">
+            <span id="lblTicket1" class="ticket-actual-numero">Ticket {{listAtendidos[0].id}}</span>
+            <br>
+            <span id="lblEscritorio1" class="ticket-actual-escritorio">Escritorio {{listAtendidos[0].escritorio}}</span>
+        </td>
+        <td>
+            <table>
+                <tr *ngIf="listAtendidos.length>1">
+                    <td>
+                        <span id="lblTicket2" class="ticket-secundario">Ticket {{listAtendidos[1].id}}</span>
+                        <br>
+                        <span id="lblEscritorio2">Escritorio {{listAtendidos[1].escritorio}}</span>
+                    </td>
+                </tr>
+                <tr *ngIf="listAtendidos.length>2">
+                    <td>
+                        <span id="lblTicket3" class="ticket-secundario">Ticket {{listAtendidos[2].id}}</span>
+                        <br>
+                        <span id="lblEscritorio3">Escritorio {{listAtendidos[2].escritorio}}</span>
+                    </td>
+                </tr>
+                <tr *ngIf="listAtendidos.length>3">
+                    <td>
+                        <span id="lblTicket4" class="ticket-secundario">Ticket {{listAtendidos[3].id}}</span>
+                        <br>
+                        <span id="lblEscritorio4">Escritorio {{listAtendidos[3].escritorio}}</span>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table> -->
+
+<!-- <table>
+    <tr>
+        <td *ngIf="listAtendidos" valign="middle" class="ticket-actual">
+            <span id="lblTicket1" class="ticket-actual-numero">Ticket {{listAtendidos[0].id}}</span>
+            <br>
+            <span id="lblEscritorio1" class="ticket-actual-escritorio">Escritorio {{listAtendidos[0].escritorio}}</span>
+        </td>
+        <td>
+            <table>
+                <tr>
+                    <td>
+                        <span id="lblTicket2" class="ticket-secundario">Ticket {{listAtendidos[1].id}}</span>
+                        <br>
+                        <span id="lblEscritorio2">Escritorio {{listAtendidos[1].escritorio}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="lblTicket3" class="ticket-secundario">Ticket {{listAtendidos[2].id}}</span>
+                        <br>
+                        <span id="lblEscritorio3">Escritorio {{listAtendidos[2].escritorio}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="lblTicket4" class="ticket-secundario">Ticket {{listAtendidos[3].id}}</span>
+                        <br>
+                        <span id="lblEscritorio4">Escritorio {{listAtendidos[3].escritorio}}</span>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table> -->

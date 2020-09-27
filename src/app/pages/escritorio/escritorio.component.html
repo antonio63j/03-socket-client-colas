@@ -1,0 +1,22 @@
+<h1>Escritorio {{numeroEscritorio}}</h1>
+<div *ngIf="ticket">
+    <h4> Atendiendo ticket <small> {{ticket.id}}</small></h4>
+    <hr>
+    
+    <button *ngIf="atendido==false" style="margin-right: 8px" class="btn btn-primary btn-lg" (click)="atenderTicket()">Atender
+    </button>
+    <button class="btn btn-primary btn-lg" style="margin-right: 8px" (click)="solicitarSiguienteTicket()">
+        Solicitar ticket
+    </button>
+</div>
+
+<hr>
+<div *ngIf="!ticket">
+    <h4> En este momento no hay tickets pendientes</h4><small> Solicite ticket en otro momento</small>
+    <hr>
+    <button class="btn btn-primary btn-lg" (click)="solicitarSiguienteTicket()">
+        Solicitar ticket
+    </button>
+</div>
+
+
